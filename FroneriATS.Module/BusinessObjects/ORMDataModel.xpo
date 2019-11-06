@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataBaseObjectModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="5a529165-891b-4f09-ae28-b72469e189f5" dbName="FroneriATS" connectionInfo="77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxEZXZFeHByZXNzWHBvR2VuZXJhdG9yU2V0dGluZ3MgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeG1sbnM6eHNkPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYSIgcHJvdmlkZXJLZXk9Ik1TU3FsU2VydmVyIj4NCiAgPHBhcmFtZXRlcj4NCiAgICA8Q29ubmVjdGlvblBhZ2VTZXR0aW5nc0l0ZW0gbmFtZT0ic2VydmVyIiB2YWx1ZT0iLlxTUUwxNiIgLz4NCiAgICA8Q29ubmVjdGlvblBhZ2VTZXR0aW5nc0l0ZW0gbmFtZT0iZGF0YWJhc2UiIHZhbHVlPSJGcm9uZXJpQVRTIiAvPg0KICAgIDxDb25uZWN0aW9uUGFnZVNldHRpbmdzSXRlbSBuYW1lPSJ1c2VJbnRlZ3JhdGVkU2VjdXJpdHkiIHZhbHVlPSJGYWxzZSIgLz4NCiAgICA8Q29ubmVjdGlvblBhZ2VTZXR0aW5nc0l0ZW0gbmFtZT0idXNlcmlkIiB2YWx1ZT0ic2EiIC8+DQogICAgPENvbm5lY3Rpb25QYWdlU2V0dGluZ3NJdGVtIG5hbWU9InBhc3N3b3JkIiB2YWx1ZT0iMjQ5MTk4MyIgLz4NCiAgICA8Q29ubmVjdGlvblBhZ2VTZXR0aW5nc0l0ZW0gbmFtZT0icmVhZCBvbmx5IiB2YWx1ZT0iMSIgLz4NCiAgICA8Q29ubmVjdGlvblBhZ2VTZXR0aW5nc0l0ZW0gbmFtZT0iZ2VuZXJhdGVDb25uZWN0aW9uSGVscGVyIiB2YWx1ZT0idHJ1ZSIgLz4NCiAgPC9wYXJhbWV0ZXI+DQo8L0RldkV4cHJlc3NYcG9HZW5lcmF0b3JTZXR0aW5ncz4=" namespace="FroneriATS.Module.BusinessObjects.FroneriATS" connectionString="XpoProvider=MSSqlServer;data source=.\SQL16;user id=sa;password=2491983;initial catalog=FroneriATS;Persist Security Info=true" dataBaseShemaInfo="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" generateConnectionHelper="true" generateStoredProcedures="true" fieldNameCase="Unchanged" generateDefaultConstructors="false" generateClassesForViews="true" useNameOf="true" xmlns="http://schemas.microsoft.com/dsltools/ORMDataModel">
+  <classes>
+    <dataBaseObjectModelHasClasses Id="47ce2d79-2c23-4fd0-ac5e-b9b03e898361">
+      <xpObject Id="28e079c1-a01b-4261-8769-16e4c64756ab" name="asset" baseClass="XPLiteObject" userFileName="asset" designerFileName="asset.Designer" className="asset" virtualBaseClass="XPLiteObject" persistent="asset" virtualName="asset">
+        <fields>
+          <generalXpObjectHasFields Id="163eff2c-3344-4f69-940c-22c47ab2f289">
+            <field Id="94745c74-21c1-4615-a1e5-2d57227db4c9" name="asset_id" columnType="Int32" key="true" isIdentity="true" displayName="Oid" persistent="asset_id" virtualColumnType="Int32" memberDesignTimeVisibility="false" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="455e3512-0431-4fa5-a83f-c61bf230ce5d">
+            <field Id="1f1310ce-ec39-4b8b-b007-389ec9cc51a1" name="asset_type_id" columnType="Int32" displayName="Asset type" persistent="asset_type_id" virtualColumnType="asset_type" logicalType="asset_type" delayedUpdateModifiedOnly="false" customAttributes="DevExpress.Persistent.Validation.RuleRequiredField(&quot;asset_asset_type_name_vld_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save, &quot;Please Enter Type Name&quot;)" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="35e30358-c59f-41dd-8a00-23760dbac878">
+            <field Id="a45d81cb-72e8-4bba-99b0-59ed233ecce0" name="asset_status_id" columnType="Int32" displayName="Status" persistent="asset_status_id" virtualColumnType="asset_status" logicalType="asset_status" delayedUpdateModifiedOnly="false" customAttributes="DevExpress.Persistent.Validation.RuleRequiredField(&quot;asset_asset_status_name_vld_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save, &quot;Please Enter Status Name&quot;)" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="2523f47e-270f-4e60-956f-c6beb4efc942">
+            <field Id="0af87908-314e-4daf-a914-5ad72ef7e6ff" name="asset_model_id" columnType="Int32" displayName="Model" persistent="asset_model_id" virtualColumnType="asset_model" logicalType="asset_model" delayedUpdateModifiedOnly="false" customAttributes="DevExpress.Persistent.Validation.RuleRequiredField(&quot;asset_asset_model_name_vld_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save, &quot;Please Enter Model Name&quot;)" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="0c69cf2e-bafb-4231-b14f-777866e28bf7">
+            <field Id="0f8e5ce6-de36-48ed-a571-67c9015aec4c" name="asset_register_date" columnType="DateTime" displayName="Register date" persistent="asset_register_date" virtualColumnType="DateTime" delayedUpdateModifiedOnly="false" customAttributes="DevExpress.Persistent.Validation.RuleRequiredField(&quot;asset_asset_register_date_vld_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save, &quot;Please Enter Register date&quot;)" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="bf81c014-eb57-49b5-97bc-bdb0405198fb">
+            <field Id="c8a6143d-4a6b-4bdb-83ee-38bef861bbfd" name="asset_number" displayName="Asset number" persistent="asset_number" virtualColumnType="String" delayedUpdateModifiedOnly="false" customAttributes="DevExpress.Persistent.Validation.RuleRequiredField(&quot;asset_asset_asset_number_vld_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save, &quot;Please Enter Asset Number&quot;)" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="864e71cc-e332-49e6-a350-492aa17ace2f">
+            <field Id="93c37fa2-baee-4e98-a420-1de478578444" name="asset_serial_number" displayName="Serial number" persistent="asset_serial_number" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="50" customAttributes="DevExpress.Persistent.Validation.RuleRequiredField(&quot;asset_serial_vld_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save, &quot;Please Enter Serial Number&quot;)" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="0ddc02c6-80d8-400c-ba81-c25ef8ffae1f">
+            <field Id="e9054850-2daa-4b37-a982-df3ad3e7e27a" name="asset_inventory_id" columnType="Int32" displayName="Inventory" persistent="asset_inventory_id" virtualColumnType="asset_inventory" logicalType="asset_inventory" delayedUpdateModifiedOnly="false" customAttributes="DevExpress.Persistent.Validation.RuleRequiredField(&quot;asset_asset_inventory_name_vld_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save, &quot;Please Enter Inventory Name&quot;)" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="54b8d7f4-2322-4f76-a12e-fb67e3fba38e">
+            <field Id="e541c2cb-f612-4238-a802-5742a0d855f6" name="asset_person_id" columnType="Int32" displayName="Person" persistent="asset_person_id" virtualColumnType="asset_person" logicalType="asset_person" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="df86cec9-46fa-4de4-be7c-43e7d16d8626">
+            <field Id="b570a950-b0ea-48c2-b599-94aaf292490d" name="available" columnType="Boolean" displayName="Available" persistent="available" virtualColumnType="Boolean" delayedUpdateModifiedOnly="false" customAttributes="DevExpress.Persistent.Validation.RuleRequiredField(&quot;asset_asset_available_vld_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save, &quot;Please Enter Available&quot;)" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="54184eaf-2a10-4403-93e9-46da00941cf7">
+            <field Id="a2e473b3-675d-457e-ac05-320b85a1c235" name="notes" displayName="Notes" persistent="notes" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="1000" />
+          </generalXpObjectHasFields>
+        </fields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="86f1488d-8abb-4b7c-8a3a-65a35a6ebff7">
+      <xpObject Id="a8559ddd-bb0e-4406-ba13-846baa035039" name="asset_inventory" baseClass="XPLiteObject" userFileName="asset_inventory" designerFileName="asset_inventory.Designer" className="asset_inventory" virtualBaseClass="XPLiteObject" persistent="asset_inventory" virtualName="asset_inventory">
+        <fields>
+          <generalXpObjectHasFields Id="79f7e911-21ec-41b7-88ff-6d3db09acd15">
+            <field Id="68e40425-504b-4955-a476-3eeecdca271e" name="asset_inventory_id" columnType="Int32" key="true" isIdentity="true" displayName="Oid" persistent="asset_inventory_id" virtualColumnType="Int32" memberDesignTimeVisibility="false" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="b8d00950-e8a5-4d64-aa59-236d71a1ff6b">
+            <field Id="3380cebe-d0f5-45a5-ad8c-5e05c185ae3c" name="asset_inventory_name" displayName="Inventory name" persistent="asset_inventory_name" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="50" customAttributes="DevExpress.Persistent.Validation.RuleRequiredField(&quot;asset_inventory_asset_inventory_name_vld_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save, &quot;Please Enter Inventory Name&quot;)" />
+          </generalXpObjectHasFields>
+        </fields>
+        <saTargets>
+          <simpleAssociation Id="a8b1cb2e-a31d-40eb-877d-aa2969ccc577" sourceCollectionName="assets" name="assetReferencesasset_inventory" targetFieldName="asset_inventory_id">
+            <xpObjectMoniker Id="28e079c1-a01b-4261-8769-16e4c64756ab" />
+          </simpleAssociation>
+        </saTargets>
+        <collectionFields>
+          <xpObjectHasCollectionFields Id="64ffa647-2cec-4d6f-a7e3-4c4b434beb1e">
+            <collectionField Id="073224e9-67c2-4476-aff4-d5d9fcd87c66" displayName="Assets" name="assets" />
+          </xpObjectHasCollectionFields>
+        </collectionFields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="edef6552-b339-4fff-a114-5e5a7ae9b63d">
+      <xpObject Id="5c018545-d35f-47cf-84b1-1e3d55a05db7" name="asset_model" baseClass="XPLiteObject" userFileName="asset_model" designerFileName="asset_model.Designer" className="asset_model" virtualBaseClass="XPLiteObject" persistent="asset_model" virtualName="asset_model">
+        <fields>
+          <generalXpObjectHasFields Id="76f4e5a2-4a94-48ed-9ef9-76b7d06e64d2">
+            <field Id="ab5556fb-e037-406e-9560-f6bf4f86156d" name="asset_model_id" columnType="Int32" key="true" isIdentity="true" displayName="Oid" persistent="asset_model_id" virtualColumnType="Int32" memberDesignTimeVisibility="false" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="178e6699-b27a-41e3-b860-0acb93f7a43e">
+            <field Id="ad1e9ee3-f0cd-432e-9c9b-8ecfc36826f2" name="asset_model_name" displayName="Model name" persistent="asset_model_name" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="50" customAttributes="DevExpress.Persistent.Validation.RuleRequiredField(&quot;asset_model_asset_model_name_vld_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save, &quot;Please Enter Model Name&quot;)" />
+          </generalXpObjectHasFields>
+        </fields>
+        <saTargets>
+          <simpleAssociation Id="b872696d-48c8-424b-8932-e20007ea7ef0" sourceCollectionName="assets" name="assetReferencesasset_model" targetFieldName="asset_model_id">
+            <xpObjectMoniker Id="28e079c1-a01b-4261-8769-16e4c64756ab" />
+          </simpleAssociation>
+        </saTargets>
+        <collectionFields>
+          <xpObjectHasCollectionFields Id="17d6113a-0cfb-4aec-b119-2193bd0b48d0">
+            <collectionField Id="c7ae3fed-62e1-4015-ba89-263c5999042e" displayName="Assets" name="assets" />
+          </xpObjectHasCollectionFields>
+        </collectionFields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="6e419318-a3ba-4b47-9fb3-bb08926758bd">
+      <xpObject Id="1dc091a9-b78c-48b0-8b78-7133a570743c" name="asset_person" baseClass="XPLiteObject" userFileName="asset_person" designerFileName="asset_person.Designer" className="asset_person" virtualBaseClass="XPLiteObject" persistent="asset_person" virtualName="asset_person">
+        <fields>
+          <generalXpObjectHasFields Id="a54c6102-23d8-47d7-b588-2c4363f39237">
+            <field Id="4697e23a-0a37-4158-b099-e4ff22dec272" name="asset_person_id" columnType="Int32" key="true" isIdentity="true" displayName="Oid" persistent="asset_person_id" virtualColumnType="Int32" memberDesignTimeVisibility="false" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="ae00a038-efe4-4b55-bb94-722ef90c77a7">
+            <field Id="a8479f61-6b78-492c-9b5c-1ab6910d693f" name="asset_person_name" displayName="Person name" persistent="asset_person_name" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="50" customAttributes="&#xD;&#xA;DevExpress.Persistent.Validation.RuleRequiredField(&quot;asset_person_asset_person_name_vld_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save, &quot;Please Enter Person Name&quot;)" />
+          </generalXpObjectHasFields>
+        </fields>
+        <indexes>
+          <xpObjectHasIndexes Id="68b3d65f-61cd-44cd-82c2-9efffd44f7a6">
+            <index Id="214661a3-56a2-4fdd-8e7c-fe2fc8aebee5" name="uni_name" unique="true">
+              <fieldsInIndex>
+                <indexReferencesFields Id="48ef4388-598c-4f6b-8557-028f5d411933">
+                  <fieldMoniker Id="a8479f61-6b78-492c-9b5c-1ab6910d693f" />
+                </indexReferencesFields>
+              </fieldsInIndex>
+            </index>
+          </xpObjectHasIndexes>
+        </indexes>
+        <saTargets>
+          <simpleAssociation Id="893a4167-c122-4b12-8111-248f33c712f6" sourceCollectionName="assets" name="assetReferencesasset_person" targetFieldName="asset_person_id">
+            <xpObjectMoniker Id="28e079c1-a01b-4261-8769-16e4c64756ab" />
+          </simpleAssociation>
+        </saTargets>
+        <collectionFields>
+          <xpObjectHasCollectionFields Id="8246a363-36bc-40bf-85b4-2a66d7b18791">
+            <collectionField Id="9773161d-1614-45fa-8224-b4212e4f04a8" displayName="Assets" name="assets" />
+          </xpObjectHasCollectionFields>
+        </collectionFields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="e3183423-e56f-4dc9-87d6-7780719a16a8">
+      <xpObject Id="96e887bc-8bab-4ccb-b65d-3ec0e991e0f9" name="asset_status" baseClass="XPLiteObject" userFileName="asset_status" designerFileName="asset_status.Designer" className="asset_status" virtualBaseClass="XPLiteObject" persistent="asset_status" virtualName="asset_status">
+        <fields>
+          <generalXpObjectHasFields Id="efc1d9c5-48bd-4366-8e8e-53ef7ce5c1d4">
+            <field Id="5eda4a29-20f8-4e34-a188-9e7274daad2c" name="asset_status_id" columnType="Int32" key="true" isIdentity="true" displayName="Oid" persistent="asset_status_id" virtualColumnType="Int32" memberDesignTimeVisibility="false" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="4d0a29f9-f336-4f84-b1d2-db4882ce1575">
+            <field Id="9ba8ce86-6041-4383-aa7e-48c7914d700a" name="asset_status_name" displayName="Status name" persistent="asset_status_name" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="50" customAttributes="DevExpress.Persistent.Validation.RuleRequiredField(&quot;asset_status_asset_status_name_vld_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save, &quot;Please Enter Status Name&quot;)" />
+          </generalXpObjectHasFields>
+        </fields>
+        <saTargets>
+          <simpleAssociation Id="6badc984-c9f2-41c3-b3eb-03104a4e807c" sourceCollectionName="assets" name="assetReferencesasset_status" targetFieldName="asset_status_id">
+            <xpObjectMoniker Id="28e079c1-a01b-4261-8769-16e4c64756ab" />
+          </simpleAssociation>
+        </saTargets>
+        <collectionFields>
+          <xpObjectHasCollectionFields Id="82642c4d-6b4e-4f56-a23c-e0df01e617aa">
+            <collectionField Id="a273da18-4243-435e-bbe9-aacf182a3aa5" displayName="Assets" name="assets" />
+          </xpObjectHasCollectionFields>
+        </collectionFields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="b57dfa39-d08b-4b5b-ad74-b385e9142243">
+      <xpObject Id="d02ca31a-716a-459f-a754-abd4a653dd3d" name="asset_type" baseClass="XPLiteObject" userFileName="asset_type" designerFileName="asset_type.Designer" className="asset_type" virtualBaseClass="XPLiteObject" persistent="asset_type" virtualName="asset_type">
+        <fields>
+          <generalXpObjectHasFields Id="5a332b78-d981-4c27-a01d-6389237a5aeb">
+            <field Id="3a641afd-3b7c-4e35-866e-3c58768a181e" name="asset_type_id" columnType="Int32" key="true" isIdentity="true" displayName="Oid" persistent="asset_type_id" virtualColumnType="Int32" memberDesignTimeVisibility="false" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="9bf5dc38-a5d7-4fb6-a40e-5ac14b55676b">
+            <field Id="33850e64-9960-40d9-bb92-61992d8b4198" name="asset_type_name" displayName="Type name" persistent="asset_type_name" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="50" customAttributes="DevExpress.Persistent.Validation.RuleRequiredField(&quot;asset_type_asset_type_name_vld_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save, &quot;Please Enter Type Name&quot;)" />
+          </generalXpObjectHasFields>
+        </fields>
+        <saTargets>
+          <simpleAssociation Id="7f695c21-5b48-4764-bd27-72a882a8a643" sourceCollectionName="assets" name="assetReferencesasset_type" targetFieldName="asset_type_id">
+            <xpObjectMoniker Id="28e079c1-a01b-4261-8769-16e4c64756ab" />
+          </simpleAssociation>
+        </saTargets>
+        <collectionFields>
+          <xpObjectHasCollectionFields Id="f23f1ff6-a400-485f-b88c-b0e92612e214">
+            <collectionField Id="66e429fb-a43a-4039-ba0e-4c5777879b1e" displayName="Assets" name="assets" />
+          </xpObjectHasCollectionFields>
+        </collectionFields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+  </classes>
+</dataBaseObjectModel>

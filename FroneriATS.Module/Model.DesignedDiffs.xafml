@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application Title="FroneriATS" Logo="FroneriATS" Company="Froneri Egypt" Copyright="Mohamed Omar" Description="Assets Management System">
+  <NavigationItems DefaultLeafImageName="BO_Document" GenerateRelatedAnalysisGroup="True" GenerateRelatedReportsGroup="True" GenerateRelatedViewVariantsGroup="True">
+    <Items>
+      <Item Id="Default" Caption="Scheduler" />
+    </Items>
+  </NavigationItems>
+  <Options DataAccessMode="Server">
+    <LayoutManagerOptions RequiredFieldMark="*" />
+  </Options>
+  <SchemaModules>
+    <SchemaModule Name="CloneObjectModule" Version="18.1.3.0" IsNewNode="True" />
+    <SchemaModule Name="SchedulerModuleBase" Version="18.1.3.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="18.1.3.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views>
+    <ListView Id="asset_inventory_assets_ListView" DataAccessMode="Server" />
+    <ListView Id="asset_model_assets_ListView" DataAccessMode="Server" />
+    <ListView Id="asset_person_assets_ListView" DataAccessMode="Server" />
+    <ListView Id="asset_status_assets_ListView" DataAccessMode="Server" />
+    <ListView Id="asset_type_assets_ListView" DataAccessMode="Server" />
+  </Views>
+</Application>
