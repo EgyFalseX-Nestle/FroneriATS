@@ -1,165 +1,298 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<dataBaseObjectModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="5a529165-891b-4f09-ae28-b72469e189f5" dbName="FroneriATS" connectionInfo="77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxEZXZFeHByZXNzWHBvR2VuZXJhdG9yU2V0dGluZ3MgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeG1sbnM6eHNkPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYSIgcHJvdmlkZXJLZXk9Ik1TU3FsU2VydmVyIj4NCiAgPHBhcmFtZXRlcj4NCiAgICA8Q29ubmVjdGlvblBhZ2VTZXR0aW5nc0l0ZW0gbmFtZT0ic2VydmVyIiB2YWx1ZT0iLlxTUUwxNiIgLz4NCiAgICA8Q29ubmVjdGlvblBhZ2VTZXR0aW5nc0l0ZW0gbmFtZT0iZGF0YWJhc2UiIHZhbHVlPSJGcm9uZXJpQVRTIiAvPg0KICAgIDxDb25uZWN0aW9uUGFnZVNldHRpbmdzSXRlbSBuYW1lPSJ1c2VJbnRlZ3JhdGVkU2VjdXJpdHkiIHZhbHVlPSJGYWxzZSIgLz4NCiAgICA8Q29ubmVjdGlvblBhZ2VTZXR0aW5nc0l0ZW0gbmFtZT0idXNlcmlkIiB2YWx1ZT0ic2EiIC8+DQogICAgPENvbm5lY3Rpb25QYWdlU2V0dGluZ3NJdGVtIG5hbWU9InBhc3N3b3JkIiB2YWx1ZT0iMjQ5MTk4MyIgLz4NCiAgICA8Q29ubmVjdGlvblBhZ2VTZXR0aW5nc0l0ZW0gbmFtZT0icmVhZCBvbmx5IiB2YWx1ZT0iMSIgLz4NCiAgICA8Q29ubmVjdGlvblBhZ2VTZXR0aW5nc0l0ZW0gbmFtZT0iZ2VuZXJhdGVDb25uZWN0aW9uSGVscGVyIiB2YWx1ZT0idHJ1ZSIgLz4NCiAgPC9wYXJhbWV0ZXI+DQo8L0RldkV4cHJlc3NYcG9HZW5lcmF0b3JTZXR0aW5ncz4=" namespace="FroneriATS.Module.BusinessObjects.FroneriATS" connectionString="XpoProvider=MSSqlServer;data source=.\SQL16;user id=sa;password=2491983;initial catalog=FroneriATS;Persist Security Info=true" dataBaseShemaInfo="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" generateConnectionHelper="true" generateStoredProcedures="true" fieldNameCase="Unchanged" generateDefaultConstructors="false" generateClassesForViews="true" useNameOf="true" xmlns="http://schemas.microsoft.com/dsltools/ORMDataModel">
+<dataBaseObjectModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="5a529165-891b-4f09-ae28-b72469e189f5" dbName="FroneriATS" connectionInfo="77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxEZXZFeHByZXNzWHBvR2VuZXJhdG9yU2V0dGluZ3MgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeG1sbnM6eHNkPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYSIgcHJvdmlkZXJLZXk9Ik1TU3FsU2VydmVyIj4NCiAgPHBhcmFtZXRlcj4NCiAgICA8Q29ubmVjdGlvblBhZ2VTZXR0aW5nc0l0ZW0gbmFtZT0ic2VydmVyIiB2YWx1ZT0iLiIgLz4NCiAgICA8Q29ubmVjdGlvblBhZ2VTZXR0aW5nc0l0ZW0gbmFtZT0iZGF0YWJhc2UiIHZhbHVlPSJGcm9uZXJpQVRTIiAvPg0KICAgIDxDb25uZWN0aW9uUGFnZVNldHRpbmdzSXRlbSBuYW1lPSJ1c2VJbnRlZ3JhdGVkU2VjdXJpdHkiIHZhbHVlPSJUcnVlIiAvPg0KICAgIDxDb25uZWN0aW9uUGFnZVNldHRpbmdzSXRlbSBuYW1lPSJ1c2VyaWQiIHZhbHVlPSJzYSIgLz4NCiAgICA8Q29ubmVjdGlvblBhZ2VTZXR0aW5nc0l0ZW0gbmFtZT0icGFzc3dvcmQiIHZhbHVlPSIyNDkxOTgzIiAvPg0KICAgIDxDb25uZWN0aW9uUGFnZVNldHRpbmdzSXRlbSBuYW1lPSJyZWFkIG9ubHkiIHZhbHVlPSIxIiAvPg0KICAgIDxDb25uZWN0aW9uUGFnZVNldHRpbmdzSXRlbSBuYW1lPSJnZW5lcmF0ZUNvbm5lY3Rpb25IZWxwZXIiIHZhbHVlPSJ0cnVlIiAvPg0KICA8L3BhcmFtZXRlcj4NCjwvRGV2RXhwcmVzc1hwb0dlbmVyYXRvclNldHRpbmdzPg==" namespace="FroneriATS.Module.BusinessObjects.FroneriATS" connectionString="XpoProvider=MSSqlServer;data source=.;integrated security=SSPI;initial catalog=FroneriATS" dataBaseShemaInfo="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" generateConnectionHelper="true" generateStoredProcedures="false" fieldNameCase="Unchanged" generateDefaultConstructors="false" useNameOf="true" xmlns="http://schemas.microsoft.com/dsltools/ORMDataModel">
   <classes>
-    <dataBaseObjectModelHasClasses Id="47ce2d79-2c23-4fd0-ac5e-b9b03e898361">
-      <xpObject Id="28e079c1-a01b-4261-8769-16e4c64756ab" name="asset" baseClass="XPLiteObject" userFileName="asset" designerFileName="asset.Designer" className="asset" virtualBaseClass="XPLiteObject" persistent="asset" virtualName="asset">
+    <dataBaseObjectModelHasClasses Id="33fad50d-615c-46fe-b843-668cbb7d81cf">
+      <xpObject Id="5d44578c-c2cd-46f7-864d-e4788e1aafad" name="inventory" baseClass="XPLiteObject" userFileName="inventory" designerFileName="inventory.Designer" className="inventory" virtualBaseClass="XPLiteObject" persistent="inventory" virtualName="inventory">
         <fields>
-          <generalXpObjectHasFields Id="163eff2c-3344-4f69-940c-22c47ab2f289">
-            <field Id="94745c74-21c1-4615-a1e5-2d57227db4c9" name="asset_id" columnType="Int32" key="true" isIdentity="true" displayName="Oid" persistent="asset_id" virtualColumnType="Int32" memberDesignTimeVisibility="false" delayedUpdateModifiedOnly="false" />
+          <generalXpObjectHasFields Id="32dd8998-9332-49a7-ab13-d0321e472cd3">
+            <field Id="fe43dd1d-c029-4493-aea9-2d4a7f5f1d22" name="asset_inventory_id" columnType="Int32" key="true" isIdentity="true" displayName="Oid" persistent="asset_inventory_id" virtualColumnType="Int32" memberDesignTimeVisibility="false" delayedUpdateModifiedOnly="false" />
           </generalXpObjectHasFields>
-          <generalXpObjectHasFields Id="455e3512-0431-4fa5-a83f-c61bf230ce5d">
-            <field Id="1f1310ce-ec39-4b8b-b007-389ec9cc51a1" name="asset_type_id" columnType="Int32" displayName="Asset type" persistent="asset_type_id" virtualColumnType="asset_type" logicalType="asset_type" delayedUpdateModifiedOnly="false" customAttributes="DevExpress.Persistent.Validation.RuleRequiredField(&quot;asset_asset_type_name_vld_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save, &quot;Please Enter Type Name&quot;)" />
-          </generalXpObjectHasFields>
-          <generalXpObjectHasFields Id="35e30358-c59f-41dd-8a00-23760dbac878">
-            <field Id="a45d81cb-72e8-4bba-99b0-59ed233ecce0" name="asset_status_id" columnType="Int32" displayName="Status" persistent="asset_status_id" virtualColumnType="asset_status" logicalType="asset_status" delayedUpdateModifiedOnly="false" customAttributes="DevExpress.Persistent.Validation.RuleRequiredField(&quot;asset_asset_status_name_vld_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save, &quot;Please Enter Status Name&quot;)" />
-          </generalXpObjectHasFields>
-          <generalXpObjectHasFields Id="2523f47e-270f-4e60-956f-c6beb4efc942">
-            <field Id="0af87908-314e-4daf-a914-5ad72ef7e6ff" name="asset_model_id" columnType="Int32" displayName="Model" persistent="asset_model_id" virtualColumnType="asset_model" logicalType="asset_model" delayedUpdateModifiedOnly="false" customAttributes="DevExpress.Persistent.Validation.RuleRequiredField(&quot;asset_asset_model_name_vld_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save, &quot;Please Enter Model Name&quot;)" />
-          </generalXpObjectHasFields>
-          <generalXpObjectHasFields Id="0c69cf2e-bafb-4231-b14f-777866e28bf7">
-            <field Id="0f8e5ce6-de36-48ed-a571-67c9015aec4c" name="asset_register_date" columnType="DateTime" displayName="Register date" persistent="asset_register_date" virtualColumnType="DateTime" delayedUpdateModifiedOnly="false" customAttributes="DevExpress.Persistent.Validation.RuleRequiredField(&quot;asset_asset_register_date_vld_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save, &quot;Please Enter Register date&quot;)" />
-          </generalXpObjectHasFields>
-          <generalXpObjectHasFields Id="bf81c014-eb57-49b5-97bc-bdb0405198fb">
-            <field Id="c8a6143d-4a6b-4bdb-83ee-38bef861bbfd" name="asset_number" displayName="Asset number" persistent="asset_number" virtualColumnType="String" delayedUpdateModifiedOnly="false" customAttributes="DevExpress.Persistent.Validation.RuleRequiredField(&quot;asset_asset_asset_number_vld_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save, &quot;Please Enter Asset Number&quot;)" />
-          </generalXpObjectHasFields>
-          <generalXpObjectHasFields Id="864e71cc-e332-49e6-a350-492aa17ace2f">
-            <field Id="93c37fa2-baee-4e98-a420-1de478578444" name="asset_serial_number" displayName="Serial number" persistent="asset_serial_number" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="50" customAttributes="DevExpress.Persistent.Validation.RuleRequiredField(&quot;asset_serial_vld_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save, &quot;Please Enter Serial Number&quot;)" />
-          </generalXpObjectHasFields>
-          <generalXpObjectHasFields Id="0ddc02c6-80d8-400c-ba81-c25ef8ffae1f">
-            <field Id="e9054850-2daa-4b37-a982-df3ad3e7e27a" name="asset_inventory_id" columnType="Int32" displayName="Inventory" persistent="asset_inventory_id" virtualColumnType="asset_inventory" logicalType="asset_inventory" delayedUpdateModifiedOnly="false" customAttributes="DevExpress.Persistent.Validation.RuleRequiredField(&quot;asset_asset_inventory_name_vld_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save, &quot;Please Enter Inventory Name&quot;)" />
-          </generalXpObjectHasFields>
-          <generalXpObjectHasFields Id="54b8d7f4-2322-4f76-a12e-fb67e3fba38e">
-            <field Id="e541c2cb-f612-4238-a802-5742a0d855f6" name="asset_person_id" columnType="Int32" displayName="Person" persistent="asset_person_id" virtualColumnType="asset_person" logicalType="asset_person" delayedUpdateModifiedOnly="false" />
-          </generalXpObjectHasFields>
-          <generalXpObjectHasFields Id="df86cec9-46fa-4de4-be7c-43e7d16d8626">
-            <field Id="b570a950-b0ea-48c2-b599-94aaf292490d" name="available" columnType="Boolean" displayName="Available" persistent="available" virtualColumnType="Boolean" delayedUpdateModifiedOnly="false" customAttributes="DevExpress.Persistent.Validation.RuleRequiredField(&quot;asset_asset_available_vld_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save, &quot;Please Enter Available&quot;)" />
-          </generalXpObjectHasFields>
-          <generalXpObjectHasFields Id="54184eaf-2a10-4403-93e9-46da00941cf7">
-            <field Id="a2e473b3-675d-457e-ac05-320b85a1c235" name="notes" displayName="Notes" persistent="notes" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="1000" />
-          </generalXpObjectHasFields>
-        </fields>
-      </xpObject>
-    </dataBaseObjectModelHasClasses>
-    <dataBaseObjectModelHasClasses Id="86f1488d-8abb-4b7c-8a3a-65a35a6ebff7">
-      <xpObject Id="a8559ddd-bb0e-4406-ba13-846baa035039" name="asset_inventory" baseClass="XPLiteObject" userFileName="asset_inventory" designerFileName="asset_inventory.Designer" className="asset_inventory" virtualBaseClass="XPLiteObject" persistent="asset_inventory" virtualName="asset_inventory">
-        <fields>
-          <generalXpObjectHasFields Id="79f7e911-21ec-41b7-88ff-6d3db09acd15">
-            <field Id="68e40425-504b-4955-a476-3eeecdca271e" name="asset_inventory_id" columnType="Int32" key="true" isIdentity="true" displayName="Oid" persistent="asset_inventory_id" virtualColumnType="Int32" memberDesignTimeVisibility="false" delayedUpdateModifiedOnly="false" />
-          </generalXpObjectHasFields>
-          <generalXpObjectHasFields Id="b8d00950-e8a5-4d64-aa59-236d71a1ff6b">
-            <field Id="3380cebe-d0f5-45a5-ad8c-5e05c185ae3c" name="asset_inventory_name" displayName="Inventory name" persistent="asset_inventory_name" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="50" customAttributes="DevExpress.Persistent.Validation.RuleRequiredField(&quot;asset_inventory_asset_inventory_name_vld_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save, &quot;Please Enter Inventory Name&quot;)" />
+          <generalXpObjectHasFields Id="7ba2f4f0-b107-4279-b6d0-0110d2b68d58">
+            <field Id="0d661cdd-fde7-4415-8c4e-afd95b4e6b08" name="asset_inventory_name" displayName="Inventory" persistent="asset_inventory_name" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="50" customAttributes="DevExpress.Persistent.Validation.RuleRequiredField(&quot;inventory_asset_inventory_name_vld_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save,&quot;You must enter  Inventory&quot;)" />
           </generalXpObjectHasFields>
         </fields>
         <saTargets>
-          <simpleAssociation Id="a8b1cb2e-a31d-40eb-877d-aa2969ccc577" sourceCollectionName="assets" name="assetReferencesasset_inventory" targetFieldName="asset_inventory_id">
-            <xpObjectMoniker Id="28e079c1-a01b-4261-8769-16e4c64756ab" />
+          <simpleAssociation Id="ac376dc4-9b10-4a70-ac09-45dd14529ef9" sourceCollectionName="mobiles" name="mobileReferencesinventory" targetFieldName="inventory_id">
+            <xpObjectMoniker Id="8df12709-7e35-40c3-8e85-ed9077ea368f" />
+          </simpleAssociation>
+          <simpleAssociation Id="ceb6d62d-2157-430e-b9af-3202b5da7300" sourceCollectionName="printers" name="printerReferencesinventory" targetFieldName="inventory_id">
+            <xpObjectMoniker Id="c8284e67-9162-45fa-bbbf-2533b31dee80" />
+          </simpleAssociation>
+          <simpleAssociation Id="67fab389-16a1-40cf-b862-b5691d8afc32" sourceCollectionName="user_inventorys" name="user_inventoryReferencesinventory" targetFieldName="asset_inventory_id">
+            <xpObjectMoniker Id="5bd0b412-e6ac-427a-8e1d-2a959f3e6c17" />
           </simpleAssociation>
         </saTargets>
         <collectionFields>
-          <xpObjectHasCollectionFields Id="64ffa647-2cec-4d6f-a7e3-4c4b434beb1e">
-            <collectionField Id="073224e9-67c2-4476-aff4-d5d9fcd87c66" displayName="Assets" name="assets" />
+          <xpObjectHasCollectionFields Id="ca504b3e-48e9-4149-8466-0de2ffeee2be">
+            <collectionField Id="b513dde0-4bba-49f5-bb87-b7b11b4cb0d7" displayName="Mobiles" name="mobiles" />
+          </xpObjectHasCollectionFields>
+          <xpObjectHasCollectionFields Id="960bfaef-f8b3-4f02-817e-2ac676b56c34">
+            <collectionField Id="9947f912-0b6a-4b5c-938f-4afccf3e5430" displayName="Printers" name="printers" />
+          </xpObjectHasCollectionFields>
+          <xpObjectHasCollectionFields Id="c4512b87-dc35-4167-8b1f-0f5f389c222f">
+            <collectionField Id="d7e87f0b-a13d-4ed7-bccd-2c4ce0195f64" displayName="Inventory Users" name="user_inventorys" />
           </xpObjectHasCollectionFields>
         </collectionFields>
       </xpObject>
     </dataBaseObjectModelHasClasses>
-    <dataBaseObjectModelHasClasses Id="edef6552-b339-4fff-a114-5e5a7ae9b63d">
-      <xpObject Id="5c018545-d35f-47cf-84b1-1e3d55a05db7" name="asset_model" baseClass="XPLiteObject" userFileName="asset_model" designerFileName="asset_model.Designer" className="asset_model" virtualBaseClass="XPLiteObject" persistent="asset_model" virtualName="asset_model">
+    <dataBaseObjectModelHasClasses Id="eda26135-4f30-4fa1-af55-d77454069ff3">
+      <xpObject Id="8df12709-7e35-40c3-8e85-ed9077ea368f" name="mobile" baseClass="XPLiteObject" userFileName="mobile" designerFileName="mobile.Designer" className="mobile" virtualBaseClass="XPLiteObject" persistent="mobile" virtualName="mobile">
         <fields>
-          <generalXpObjectHasFields Id="76f4e5a2-4a94-48ed-9ef9-76b7d06e64d2">
-            <field Id="ab5556fb-e037-406e-9560-f6bf4f86156d" name="asset_model_id" columnType="Int32" key="true" isIdentity="true" displayName="Oid" persistent="asset_model_id" virtualColumnType="Int32" memberDesignTimeVisibility="false" delayedUpdateModifiedOnly="false" />
+          <generalXpObjectHasFields Id="0c9c2e74-705b-4045-bda2-ddcac9d5d17e">
+            <field Id="ad934eff-fd50-40e0-b32c-fda8994fda72" name="id" columnType="Int32" key="true" isIdentity="true" displayName="Oid" persistent="id" virtualColumnType="Int32" memberDesignTimeVisibility="false" delayedUpdateModifiedOnly="false" />
           </generalXpObjectHasFields>
-          <generalXpObjectHasFields Id="178e6699-b27a-41e3-b860-0acb93f7a43e">
-            <field Id="ad1e9ee3-f0cd-432e-9c9b-8ecfc36826f2" name="asset_model_name" displayName="Model name" persistent="asset_model_name" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="50" customAttributes="DevExpress.Persistent.Validation.RuleRequiredField(&quot;asset_model_asset_model_name_vld_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save, &quot;Please Enter Model Name&quot;)" />
+          <generalXpObjectHasFields Id="d150c5c2-bf21-4228-99de-9e4216619fd1">
+            <field Id="e484c05c-7fb0-4dd1-a9c2-49186870ebe6" name="status_id" columnType="Int32" displayName="Status" persistent="status_id" virtualColumnType="mobile_status" logicalType="mobile_status" delayedUpdateModifiedOnly="false" customAttributes="DevExpress.Persistent.Validation.RuleRequiredField(&quot;mobile_status_id_vld_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save,&quot;You must enter Status&quot;)" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="8a89920a-f436-49fd-bb9c-756c3c7257bd">
+            <field Id="3f6ac991-7761-4b43-8c1d-683660be3415" name="model_id" columnType="Int32" displayName="Model" persistent="model_id" virtualColumnType="mobile_model" logicalType="mobile_model" delayedUpdateModifiedOnly="false" customAttributes="DevExpress.Persistent.Validation.RuleRequiredField(&quot;mobile_model_id_vld_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save,&quot;You must enter Model&quot;)" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="a03a3f9e-803c-44b9-9497-9074a3f4190c">
+            <field Id="f6f9e6b1-d4c2-4b3c-8e9b-720f1342ba4f" name="register_date" columnType="DateTime" displayName="Register date" persistent="register_date" virtualColumnType="DateTime" delayedUpdateModifiedOnly="false" customAttributes=" DevExpress.Persistent.Validation.RuleRequiredField(&quot;mobile_register_date_vld_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save,&quot;You must enter Register date&quot;)" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="4e1a40fc-7982-4e07-ad66-873ef45d9d90">
+            <field Id="31716ab1-213f-421c-8e17-d31d9df9d7b0" name="number" displayName="Number" persistent="number" virtualColumnType="String" memberDesignTimeVisibility="false" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="73b77ca3-32d7-48d8-a928-056aa01f1efa">
+            <field Id="e5af80ed-ff3c-4d0e-9397-11166aa0ea41" name="serial_number" displayName="Serial number" persistent="serial_number" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="50" customAttributes="DevExpress.Persistent.Validation.RuleRequiredField(&quot;mobile_serial_number_vld_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save,&quot;You must enter Serial number&quot;),DevExpress.Persistent.Validation.RuleUniqueValue(id:&quot;&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save, CriteriaEvaluationBehavior = DevExpress.Persistent.Validation.CriteriaEvaluationBehavior.BeforeTransaction, MessageTemplateMustBeUnique = &quot;{TargetPropertyName} Already Exists&quot;)" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="7aeab2f7-817a-443d-903f-cd971752a380">
+            <field Id="3ed920a6-8026-48fa-aad1-ee573b7d40b3" name="inventory_id" columnType="Int32" displayName="Inventory" persistent="inventory_id" virtualColumnType="inventory" logicalType="inventory" delayedUpdateModifiedOnly="false" customAttributes="DevExpress.Persistent.Validation.RuleRequiredField(&quot;mobile_inventory_id_vld_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save,&quot;You must enter Inventory&quot;)" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="e2487c6b-b4c0-4f2f-b769-6b425165a26a">
+            <field Id="5a5ee9b6-0602-40c2-8906-ed5d92907a54" name="person_id" columnType="Int32" displayName="Person" persistent="person_id" virtualColumnType="persons" logicalType="persons" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="1cc529e4-fff5-4c68-9268-03970f7f2dcd">
+            <field Id="bf133260-0b94-4fb9-921e-5560e46756a3" name="available" columnType="Boolean" displayName="Available" persistent="available" virtualColumnType="Boolean" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="3b1967f1-1406-4563-b70e-05256439bf14">
+            <field Id="f4e7c07f-7340-4de9-bec7-6973dc449b64" name="device_name" displayName="Device name" persistent="device_name" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="50" customAttributes="DevExpress.Persistent.Validation.RuleUniqueValue(id: &quot;&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save, CriteriaEvaluationBehavior = DevExpress.Persistent.Validation.CriteriaEvaluationBehavior.BeforeTransaction, CustomMessageTemplate = &quot;{TargetPropertyName} Already Exists&quot;, SkipNullOrEmptyValues = true)" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="2f7efcce-e0e3-44e2-8d28-f417efbcf252">
+            <field Id="90b67ecb-0b4e-4a33-9c68-8c814819cb65" name="device_id" displayName="Device id" persistent="device_id" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="50" customAttributes="DevExpress.Persistent.Validation.RuleUniqueValue(id: &quot;&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save, CriteriaEvaluationBehavior = DevExpress.Persistent.Validation.CriteriaEvaluationBehavior.BeforeTransaction, CustomMessageTemplate = &quot;{TargetPropertyName} Already Exists&quot;, SkipNullOrEmptyValues = true)" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="b6f51eb2-1a50-49bc-8292-326e063d3d5f">
+            <field Id="f077896a-6092-423f-aa3f-9de20faa3f22" name="route_number" displayName="Route number" persistent="route_number" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="50" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="464e775c-174e-4381-9ab7-a8c45c3a0fdb">
+            <field Id="6512f841-c3df-44f6-a288-923b9a890a33" name="notes" displayName="Notes" persistent="notes" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="1000" />
+          </generalXpObjectHasFields>
+        </fields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="fd96c3f0-7a55-4b1d-8e9d-0eaeae6db17a">
+      <xpObject Id="59f0aa52-e913-425a-b1cf-1919417716bf" name="mobile_model" baseClass="XPLiteObject" userFileName="mobile_model" designerFileName="mobile_model.Designer" className="mobile_model" virtualBaseClass="XPLiteObject" persistent="mobile_model" virtualName="mobile_model">
+        <fields>
+          <generalXpObjectHasFields Id="9f888d29-806c-4dbd-a1e7-13a300a96715">
+            <field Id="988974d3-60b1-49dc-b212-5aa42fff0723" name="model_id" columnType="Int32" key="true" isIdentity="true" displayName="Oid" persistent="model_id" virtualColumnType="Int32" memberDesignTimeVisibility="false" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="2655eac7-8a26-4852-98b3-42b6d7c69792">
+            <field Id="f2927030-f887-4565-8136-2b31aab9e63c" name="model_name" displayName="Model" persistent="model_name" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="50" customAttributes="DevExpress.Persistent.Validation.RuleRequiredField(&quot;mobile_model_model_name_vld_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save,&quot;You must enter Model&quot;)" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="69b17c9e-db66-4c21-bc8a-1af0c9c9255c">
+            <field Id="81e6dfa7-7681-4934-ab8a-2f5fc332056a" name="serial_length" columnType="Byte" displayName="Serial length" persistent="serial_length" virtualColumnType="Byte" delayedUpdateModifiedOnly="false" />
           </generalXpObjectHasFields>
         </fields>
         <saTargets>
-          <simpleAssociation Id="b872696d-48c8-424b-8932-e20007ea7ef0" sourceCollectionName="assets" name="assetReferencesasset_model" targetFieldName="asset_model_id">
-            <xpObjectMoniker Id="28e079c1-a01b-4261-8769-16e4c64756ab" />
+          <simpleAssociation Id="bacde9bc-4c4e-40aa-be82-c18120df7d85" sourceCollectionName="mobiles" name="mobileReferencesmobile_model" targetFieldName="model_id">
+            <xpObjectMoniker Id="8df12709-7e35-40c3-8e85-ed9077ea368f" />
           </simpleAssociation>
         </saTargets>
         <collectionFields>
-          <xpObjectHasCollectionFields Id="17d6113a-0cfb-4aec-b119-2193bd0b48d0">
-            <collectionField Id="c7ae3fed-62e1-4015-ba89-263c5999042e" displayName="Assets" name="assets" />
+          <xpObjectHasCollectionFields Id="56643c3b-92c6-48ec-bc91-7df28ef67d5c">
+            <collectionField Id="d3c98fbe-0061-4de4-b752-479b58201438" displayName="Mobiles" name="mobiles" />
           </xpObjectHasCollectionFields>
         </collectionFields>
       </xpObject>
     </dataBaseObjectModelHasClasses>
-    <dataBaseObjectModelHasClasses Id="6e419318-a3ba-4b47-9fb3-bb08926758bd">
-      <xpObject Id="1dc091a9-b78c-48b0-8b78-7133a570743c" name="asset_person" baseClass="XPLiteObject" userFileName="asset_person" designerFileName="asset_person.Designer" className="asset_person" virtualBaseClass="XPLiteObject" persistent="asset_person" virtualName="asset_person">
+    <dataBaseObjectModelHasClasses Id="1bba13cd-d399-49c8-9b42-e1ac8a8708a1">
+      <xpObject Id="f561bee9-166a-4351-88fe-5623fcbf6cb8" name="persons" baseClass="XPLiteObject" userFileName="person" designerFileName="person.Designer" className="persons" virtualBaseClass="XPLiteObject" persistent="persons" virtualName="persons">
         <fields>
-          <generalXpObjectHasFields Id="a54c6102-23d8-47d7-b588-2c4363f39237">
-            <field Id="4697e23a-0a37-4158-b099-e4ff22dec272" name="asset_person_id" columnType="Int32" key="true" isIdentity="true" displayName="Oid" persistent="asset_person_id" virtualColumnType="Int32" memberDesignTimeVisibility="false" delayedUpdateModifiedOnly="false" />
+          <generalXpObjectHasFields Id="186f6950-0192-412d-b37d-25735581b6a1">
+            <field Id="d1085fd6-9eb9-417d-bce7-0dfbb9e3624a" name="asset_person_id" columnType="Int32" key="true" isIdentity="true" displayName="Oid" persistent="asset_person_id" virtualColumnType="Int32" memberDesignTimeVisibility="false" delayedUpdateModifiedOnly="false" />
           </generalXpObjectHasFields>
-          <generalXpObjectHasFields Id="ae00a038-efe4-4b55-bb94-722ef90c77a7">
-            <field Id="a8479f61-6b78-492c-9b5c-1ab6910d693f" name="asset_person_name" displayName="Person name" persistent="asset_person_name" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="50" customAttributes="&#xD;&#xA;DevExpress.Persistent.Validation.RuleRequiredField(&quot;asset_person_asset_person_name_vld_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save, &quot;Please Enter Person Name&quot;)" />
+          <generalXpObjectHasFields Id="faa08963-9505-4a38-a56c-812f5c4fc541">
+            <field Id="0251603a-55db-4466-9907-65c7fb39410e" name="asset_person_name" displayName="Person name" persistent="asset_person_name" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="50" />
           </generalXpObjectHasFields>
         </fields>
         <indexes>
-          <xpObjectHasIndexes Id="68b3d65f-61cd-44cd-82c2-9efffd44f7a6">
-            <index Id="214661a3-56a2-4fdd-8e7c-fe2fc8aebee5" name="uni_name" unique="true">
+          <xpObjectHasIndexes Id="a9a2aa6b-dec6-4e0a-b6bc-c2ad902730e5">
+            <index Id="d17654ec-d160-4c9e-82ab-e3e2fe07bf54" name="uni_name" unique="true">
               <fieldsInIndex>
-                <indexReferencesFields Id="48ef4388-598c-4f6b-8557-028f5d411933">
-                  <fieldMoniker Id="a8479f61-6b78-492c-9b5c-1ab6910d693f" />
+                <indexReferencesFields Id="ad622130-c5c5-4bb7-8c45-25749453e8dd">
+                  <fieldMoniker Id="0251603a-55db-4466-9907-65c7fb39410e" />
                 </indexReferencesFields>
               </fieldsInIndex>
             </index>
           </xpObjectHasIndexes>
         </indexes>
         <saTargets>
-          <simpleAssociation Id="893a4167-c122-4b12-8111-248f33c712f6" sourceCollectionName="assets" name="assetReferencesasset_person" targetFieldName="asset_person_id">
-            <xpObjectMoniker Id="28e079c1-a01b-4261-8769-16e4c64756ab" />
+          <simpleAssociation Id="fc40afb7-5c8f-45dc-a273-a50b3d3973e2" sourceCollectionName="mobiles" name="mobileReferencesperson" targetFieldName="person_id">
+            <xpObjectMoniker Id="8df12709-7e35-40c3-8e85-ed9077ea368f" />
+          </simpleAssociation>
+          <simpleAssociation Id="e5b9134c-73e5-41c9-9b5e-780aaafe7dd9" sourceCollectionName="printers" name="printerReferencesperson" targetFieldName="person_id">
+            <xpObjectMoniker Id="c8284e67-9162-45fa-bbbf-2533b31dee80" />
           </simpleAssociation>
         </saTargets>
         <collectionFields>
-          <xpObjectHasCollectionFields Id="8246a363-36bc-40bf-85b4-2a66d7b18791">
-            <collectionField Id="9773161d-1614-45fa-8224-b4212e4f04a8" displayName="Assets" name="assets" />
+          <xpObjectHasCollectionFields Id="eb110539-c8a1-4057-a1a9-7b5ce5ebbeb8">
+            <collectionField Id="9b12aea8-f7fc-4d35-b19f-b0c6162a60de" displayName="Mobiles" name="mobiles" />
+          </xpObjectHasCollectionFields>
+          <xpObjectHasCollectionFields Id="3458d90d-8798-41c1-bc99-6da1117859c7">
+            <collectionField Id="c3ca906d-4ec7-4de0-a8d1-e92cd00d7bd7" displayName="Printers" name="printers" />
           </xpObjectHasCollectionFields>
         </collectionFields>
       </xpObject>
     </dataBaseObjectModelHasClasses>
-    <dataBaseObjectModelHasClasses Id="e3183423-e56f-4dc9-87d6-7780719a16a8">
-      <xpObject Id="96e887bc-8bab-4ccb-b65d-3ec0e991e0f9" name="asset_status" baseClass="XPLiteObject" userFileName="asset_status" designerFileName="asset_status.Designer" className="asset_status" virtualBaseClass="XPLiteObject" persistent="asset_status" virtualName="asset_status">
+    <dataBaseObjectModelHasClasses Id="13361264-c3fd-4196-adf6-bfeebf3fdfbd">
+      <xpObject Id="fed7a5ae-63ca-42e4-a77c-f1a2df3ade57" name="mobile_status" baseClass="XPLiteObject" userFileName="mobile_status" designerFileName="mobile_status.Designer" className="mobile_status" virtualBaseClass="XPLiteObject" persistent="mobile_status" virtualName="mobile_status">
         <fields>
-          <generalXpObjectHasFields Id="efc1d9c5-48bd-4366-8e8e-53ef7ce5c1d4">
-            <field Id="5eda4a29-20f8-4e34-a188-9e7274daad2c" name="asset_status_id" columnType="Int32" key="true" isIdentity="true" displayName="Oid" persistent="asset_status_id" virtualColumnType="Int32" memberDesignTimeVisibility="false" delayedUpdateModifiedOnly="false" />
+          <generalXpObjectHasFields Id="9d4dc18f-0e87-43d9-835d-ed6fc270e191">
+            <field Id="8b70eb6d-3db5-49be-b1dd-69aa26683d09" name="status_id" columnType="Int32" key="true" isIdentity="true" displayName="Oid" persistent="status_id" virtualColumnType="Int32" memberDesignTimeVisibility="false" delayedUpdateModifiedOnly="false" />
           </generalXpObjectHasFields>
-          <generalXpObjectHasFields Id="4d0a29f9-f336-4f84-b1d2-db4882ce1575">
-            <field Id="9ba8ce86-6041-4383-aa7e-48c7914d700a" name="asset_status_name" displayName="Status name" persistent="asset_status_name" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="50" customAttributes="DevExpress.Persistent.Validation.RuleRequiredField(&quot;asset_status_asset_status_name_vld_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save, &quot;Please Enter Status Name&quot;)" />
+          <generalXpObjectHasFields Id="73e98690-a6bb-4d75-9bae-e00c2669897d">
+            <field Id="bf55fe25-95e3-428d-8d1f-a09e0134fbc8" name="status_name" displayName="Status" persistent="status_name" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="50" customAttributes="DevExpress.Persistent.Validation.RuleRequiredField(&quot;mobile_status_status_name_vld_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save,&quot;You must enter Status&quot;)" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="174ebf41-31f5-4472-818d-19def8425f3a">
+            <field Id="9ea7315c-1182-4768-93ff-f2600ac758ab" name="available_status" columnType="Boolean" displayName="Available status" persistent="available_status" virtualColumnType="Boolean" delayedUpdateModifiedOnly="false" />
           </generalXpObjectHasFields>
         </fields>
         <saTargets>
-          <simpleAssociation Id="6badc984-c9f2-41c3-b3eb-03104a4e807c" sourceCollectionName="assets" name="assetReferencesasset_status" targetFieldName="asset_status_id">
-            <xpObjectMoniker Id="28e079c1-a01b-4261-8769-16e4c64756ab" />
+          <simpleAssociation Id="310aed03-477d-4b88-82ed-07ec2802795b" sourceCollectionName="mobiles" name="mobileReferencesmobile_status" targetFieldName="status_id">
+            <xpObjectMoniker Id="8df12709-7e35-40c3-8e85-ed9077ea368f" />
           </simpleAssociation>
         </saTargets>
         <collectionFields>
-          <xpObjectHasCollectionFields Id="82642c4d-6b4e-4f56-a23c-e0df01e617aa">
-            <collectionField Id="a273da18-4243-435e-bbe9-aacf182a3aa5" displayName="Assets" name="assets" />
+          <xpObjectHasCollectionFields Id="e6f4ae2f-b742-4c64-b49f-91339157c7b8">
+            <collectionField Id="33d345c1-920d-4000-998d-cb42c5e8ce89" displayName="Mobiles" name="mobiles" />
           </xpObjectHasCollectionFields>
         </collectionFields>
       </xpObject>
     </dataBaseObjectModelHasClasses>
-    <dataBaseObjectModelHasClasses Id="b57dfa39-d08b-4b5b-ad74-b385e9142243">
-      <xpObject Id="d02ca31a-716a-459f-a754-abd4a653dd3d" name="asset_type" baseClass="XPLiteObject" userFileName="asset_type" designerFileName="asset_type.Designer" className="asset_type" virtualBaseClass="XPLiteObject" persistent="asset_type" virtualName="asset_type">
+    <dataBaseObjectModelHasClasses Id="90980fed-df0a-4fa1-b95a-b4cc17606529">
+      <xpObject Id="df02d509-f695-4ebe-8e2c-55efb893baf2" name="printer_model" baseClass="XPLiteObject" userFileName="printer_model" designerFileName="printer_model.Designer" className="printer_model" virtualBaseClass="XPLiteObject" persistent="printer_model" virtualName="printer_model">
         <fields>
-          <generalXpObjectHasFields Id="5a332b78-d981-4c27-a01d-6389237a5aeb">
-            <field Id="3a641afd-3b7c-4e35-866e-3c58768a181e" name="asset_type_id" columnType="Int32" key="true" isIdentity="true" displayName="Oid" persistent="asset_type_id" virtualColumnType="Int32" memberDesignTimeVisibility="false" delayedUpdateModifiedOnly="false" />
+          <generalXpObjectHasFields Id="baada0a2-1eb7-46a9-b928-7b487fb4400f">
+            <field Id="2b480dcb-91c5-49f3-933d-fb24107099a7" name="asset_model_id" columnType="Int32" key="true" isIdentity="true" displayName="Oid" persistent="asset_model_id" virtualColumnType="Int32" memberDesignTimeVisibility="false" delayedUpdateModifiedOnly="false" />
           </generalXpObjectHasFields>
-          <generalXpObjectHasFields Id="9bf5dc38-a5d7-4fb6-a40e-5ac14b55676b">
-            <field Id="33850e64-9960-40d9-bb92-61992d8b4198" name="asset_type_name" displayName="Type name" persistent="asset_type_name" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="50" customAttributes="DevExpress.Persistent.Validation.RuleRequiredField(&quot;asset_type_asset_type_name_vld_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save, &quot;Please Enter Type Name&quot;)" />
+          <generalXpObjectHasFields Id="a97732e0-bc48-4599-932b-aa65d50b8f1e">
+            <field Id="bea861f1-38f3-4006-bb4a-8bc6ac73f574" name="asset_model_name" displayName="Model" persistent="asset_model_name" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="50" customAttributes="DevExpress.Persistent.Validation.RuleRequiredField(&quot;printer_model_asset_model_name_vld_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save,&quot;You must enter Model&quot;)" />
           </generalXpObjectHasFields>
         </fields>
         <saTargets>
-          <simpleAssociation Id="7f695c21-5b48-4764-bd27-72a882a8a643" sourceCollectionName="assets" name="assetReferencesasset_type" targetFieldName="asset_type_id">
-            <xpObjectMoniker Id="28e079c1-a01b-4261-8769-16e4c64756ab" />
+          <simpleAssociation Id="c777b3b0-c216-4e64-93fe-b290deda4f6e" sourceCollectionName="printers" name="printerReferencesprinter_model" targetFieldName="model_id">
+            <xpObjectMoniker Id="c8284e67-9162-45fa-bbbf-2533b31dee80" />
           </simpleAssociation>
         </saTargets>
         <collectionFields>
-          <xpObjectHasCollectionFields Id="f23f1ff6-a400-485f-b88c-b0e92612e214">
-            <collectionField Id="66e429fb-a43a-4039-ba0e-4c5777879b1e" displayName="Assets" name="assets" />
+          <xpObjectHasCollectionFields Id="4c637152-6804-49f4-9e45-4f18b02155cd">
+            <collectionField Id="fbd7eb12-d2c9-4ef8-a3a6-2317de8120f1" displayName="Printers" name="printers" />
           </xpObjectHasCollectionFields>
         </collectionFields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="4507b020-512c-4505-8f27-7f45330309f9">
+      <xpObject Id="6ed6577c-ead5-4d45-ae15-88cf23cc90e3" name="printer_status" baseClass="XPLiteObject" userFileName="printer_status" designerFileName="printer_status.Designer" className="printer_status" virtualBaseClass="XPLiteObject" persistent="printer_status" virtualName="printer_status">
+        <fields>
+          <generalXpObjectHasFields Id="121b68f5-3a9e-4b86-b160-1bea798ec059">
+            <field Id="e2d8eb3d-28a0-49ad-b387-2c11169847a6" name="asset_status_id" columnType="Int32" key="true" isIdentity="true" displayName="Oid" persistent="asset_status_id" virtualColumnType="Int32" memberDesignTimeVisibility="false" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="cb74a0d7-f43e-4de9-8c74-fa924a241a53">
+            <field Id="adf03a35-902e-4268-9c51-1598d3a0cd2f" name="asset_status_name" displayName="Status" persistent="asset_status_name" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="50" customAttributes="DevExpress.Persistent.Validation.RuleRequiredField(&quot;printer_status_asset_status_name_vld_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save,&quot;You must enter Status&quot;)" />
+          </generalXpObjectHasFields>
+        </fields>
+        <saTargets>
+          <simpleAssociation Id="97715a41-dd9e-4ca6-818f-6e907d031cee" sourceCollectionName="printers" name="printerReferencesprinter_status" targetFieldName="status_id">
+            <xpObjectMoniker Id="c8284e67-9162-45fa-bbbf-2533b31dee80" />
+          </simpleAssociation>
+        </saTargets>
+        <collectionFields>
+          <xpObjectHasCollectionFields Id="7cd4d81a-953e-4758-8277-5583d14068cb">
+            <collectionField Id="c26517aa-8f0d-4438-8a2e-47642d594b54" displayName="Printers" name="printers" />
+          </xpObjectHasCollectionFields>
+        </collectionFields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="780daf3e-a1c6-428b-91ed-f791df48eb90">
+      <xpObject Id="b90ca8fa-136e-42d6-9b36-6515f2bab11b" name="printer_type" baseClass="XPLiteObject" userFileName="printer_type" designerFileName="printer_type.Designer" className="printer_type" virtualBaseClass="XPLiteObject" persistent="printer_type" virtualName="printer_type">
+        <fields>
+          <generalXpObjectHasFields Id="98c067ec-b8ed-4f9f-952b-3c3041a1874d">
+            <field Id="3ec6888f-8a33-4479-a316-f878bfd34ec7" name="asset_type_id" columnType="Int32" key="true" isIdentity="true" displayName="Oid" persistent="asset_type_id" virtualColumnType="Int32" memberDesignTimeVisibility="false" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="ed1f921b-b1e9-4d75-a529-57d4c015e79a">
+            <field Id="9e1e9e06-c501-4064-aec3-482f1338553b" name="asset_type_name" displayName="Type name" persistent="asset_type_name" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="50" customAttributes="DevExpress.Persistent.Validation.RuleRequiredField(&quot;printer_type_asset_type_name_vld_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save,&quot;You must enter Type name&quot;)" />
+          </generalXpObjectHasFields>
+        </fields>
+        <saTargets>
+          <simpleAssociation Id="0677a5fd-4b23-4c1b-aba7-a2f8a8f6a785" sourceCollectionName="printers" name="printerReferencesprinter_type" targetFieldName="type_id">
+            <xpObjectMoniker Id="c8284e67-9162-45fa-bbbf-2533b31dee80" />
+          </simpleAssociation>
+        </saTargets>
+        <collectionFields>
+          <xpObjectHasCollectionFields Id="b1d7bc92-c2f4-4a28-aad4-2f00b24d7b00">
+            <collectionField Id="10e43fa7-6f94-454a-a9a4-7bcdf03d7ccd" displayName="Printers" name="printers" />
+          </xpObjectHasCollectionFields>
+        </collectionFields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="fe73b501-6d50-481c-91aa-c7cfd583cb69">
+      <xpObject Id="c8284e67-9162-45fa-bbbf-2533b31dee80" name="printer" baseClass="XPLiteObject" userFileName="printer" designerFileName="printer.Designer" className="printer" virtualBaseClass="XPLiteObject" persistent="printer" virtualName="printer">
+        <fields>
+          <generalXpObjectHasFields Id="c49aa5f1-3ab0-434b-bd10-46c829c10c2d">
+            <field Id="a89c7f3a-bcf9-44a2-883e-2f3a56e8f089" name="id" columnType="Int32" key="true" isIdentity="true" displayName="Oid" persistent="id" virtualColumnType="Int32" memberDesignTimeVisibility="false" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="46406cbd-aa9f-4654-a423-9d6a08c74fbb">
+            <field Id="235a6f7b-abc6-49b0-99b7-3b3bdab005b6" name="type_id" columnType="Int32" displayName="Type" persistent="type_id" virtualColumnType="printer_type" logicalType="printer_type" delayedUpdateModifiedOnly="false" customAttributes="DevExpress.Persistent.Validation.RuleRequiredField(&quot;printer_type_id_vld_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save,&quot;You must enter Type&quot;)" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="e9f386e0-42bb-4180-b6c4-c474a30f4f4d">
+            <field Id="663a9dd2-c1b6-4384-981e-3c3c266370f2" name="status_id" columnType="Int32" displayName="Status" persistent="status_id" virtualColumnType="printer_status" logicalType="printer_status" delayedUpdateModifiedOnly="false" customAttributes="DevExpress.Persistent.Validation.RuleRequiredField(&quot;printer_status_id_vld_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save,&quot;You must enter Status&quot;)" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="4b156408-53ac-4f2c-a2a4-a914e8e9fc70">
+            <field Id="eb6feb64-08a9-4384-adc9-2faadcc58aa6" name="model_id" columnType="Int32" displayName="Model" persistent="model_id" virtualColumnType="printer_model" logicalType="printer_model" delayedUpdateModifiedOnly="false" customAttributes="DevExpress.Persistent.Validation.RuleRequiredField(&quot;printer_model_id_vld_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save,&quot;You must enter Model&quot;)" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="06c19e51-b72c-4f1d-954d-f4d2e6fbcc54">
+            <field Id="1cb1fbfa-24b7-46fb-9efe-0327ea19c081" name="register_date" columnType="DateTime" displayName="Register date" persistent="register_date" virtualColumnType="DateTime" delayedUpdateModifiedOnly="false" customAttributes="DevExpress.Persistent.Validation.RuleRequiredField(&quot;printer_register_date_vld_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save,&quot;You must enter Register date&quot;)" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="a594db54-5e64-4aac-8ded-12a545a12f38">
+            <field Id="604df49f-5a4c-47da-895e-00a3586fef45" name="number" displayName="Number" persistent="number" virtualColumnType="String" memberDesignTimeVisibility="false" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="e13be94d-f63b-4a49-989b-85ba3e76cf62">
+            <field Id="d90a6e8f-973d-4b2c-8d40-b0569b7622f1" name="serial_number" displayName="Serial number" persistent="serial_number" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="50" customAttributes="DevExpress.Persistent.Validation.RuleRequiredField(&quot;printer_serial_number_vld_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save,&quot;You must enter Serial number&quot;)&#xD;&#xA;,DevExpress.Persistent.Validation.RuleUniqueValue(id:&quot;&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save, CriteriaEvaluationBehavior = DevExpress.Persistent.Validation.CriteriaEvaluationBehavior.BeforeTransaction, CustomMessageTemplate = &quot;{TargetPropertyName} Already Exists&quot;)" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="e44747ba-2646-4cb4-9f66-6639df1898e8">
+            <field Id="1bd8c5c5-b943-49cb-8ac2-368700fd9523" name="inventory_id" columnType="Int32" displayName="Inventory" persistent="inventory_id" virtualColumnType="inventory" logicalType="inventory" delayedUpdateModifiedOnly="false" customAttributes="DevExpress.Persistent.Validation.RuleRequiredField(&quot;printer_inventory_id_vld_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save,&quot;You must enter Inventory&quot;)" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="7f6763f2-15bd-4eac-a3f7-4d3572f393f1">
+            <field Id="27f4f72c-f644-4c84-a321-cce67853f0d7" name="person_id" columnType="Int32" displayName="Person" persistent="person_id" virtualColumnType="persons" logicalType="persons" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="2bec439a-ce7b-446b-9554-83ca7885fadb">
+            <field Id="8ea82b53-9385-4d18-808f-d1d2bb1a624a" name="available" columnType="Boolean" displayName="Available" persistent="available" virtualColumnType="Boolean" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="16ef0216-4acf-4a64-8cf0-11c524fcfe0f">
+            <field Id="938e5f0a-6311-4ed4-985a-cdd721ebd3d6" name="notes" displayName="Notes" persistent="notes" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="1000" />
+          </generalXpObjectHasFields>
+        </fields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="2fecb22e-c468-4f58-ae28-1ab544da0915">
+      <xpObject Id="5bd0b412-e6ac-427a-8e1d-2a959f3e6c17" name="user_inventory" baseClass="XPLiteObject" userFileName="user_inventory" designerFileName="user_inventory.Designer" className="user_inventory" virtualBaseClass="XPLiteObject" persistent="user_inventory" virtualName="user_inventory">
+        <fields>
+          <generalXpObjectHasFields Id="f6d8303a-bc6b-49b1-9ced-67fd7e12b81a">
+            <field Id="0b44cc0b-a446-4c10-a5dc-a7f4b2932732" name="user_inventory_id" columnType="Int32" key="true" isIdentity="true" displayName="Oid" persistent="user_inventory_id" virtualColumnType="Int32" memberDesignTimeVisibility="false" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="98b15f4a-d92c-434c-b663-593f96d2596e">
+            <field Id="52a67434-607c-4338-a986-e2a290482f10" name="user_id" columnType="Guid" displayName="User" persistent="user_id" virtualColumnType="DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyUser" logicalType="DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyUser" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="1ba04b0f-fe48-463a-bae3-abbd1ce9709d">
+            <field Id="58bfb6d4-b6e1-4a66-8250-44f3d2d314ea" name="asset_inventory_id" columnType="Int32" displayName="Inventory" persistent="asset_inventory_id" virtualColumnType="inventory" logicalType="inventory" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+        </fields>
       </xpObject>
     </dataBaseObjectModelHasClasses>
   </classes>
+  <externalTypes>
+    <dataBaseObjectModelHasExternalTypes Id="111aaee3-f60a-46f1-9b99-8015eb381717">
+      <externalType Id="20376049-e9a6-4dc1-b406-d961e83f5110" name="PermissionPolicyUser" namespace="DevExpress.Persistent.BaseImpl.PermissionPolicy" />
+    </dataBaseObjectModelHasExternalTypes>
+  </externalTypes>
 </dataBaseObjectModel>

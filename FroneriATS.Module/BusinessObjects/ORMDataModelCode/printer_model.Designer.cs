@@ -8,13 +8,15 @@
 //------------------------------------------------------------------------------
 using System;
 using DevExpress.Xpo;
+using DevExpress.Xpo.Metadata;
 using DevExpress.Data.Filtering;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Reflection;
 namespace FroneriATS.Module.BusinessObjects.FroneriATS
 {
 
-    public partial class asset_model : XPLiteObject
+    public partial class printer_model : XPLiteObject
     {
         int fasset_model_id;
         [Key(true)]
@@ -27,16 +29,16 @@ namespace FroneriATS.Module.BusinessObjects.FroneriATS
         }
         string fasset_model_name;
         [Size(50)]
-        [DevExpress.Xpo.DisplayName(@"Model name")]
-        [DevExpress.Persistent.Validation.RuleRequiredField("asset_model_asset_model_name_vld_req", DevExpress.Persistent.Validation.DefaultContexts.Save, "Please Enter Model Name")]
+        [DevExpress.Xpo.DisplayName(@"Model")]
+        [DevExpress.Persistent.Validation.RuleRequiredField("printer_model_asset_model_name_vld_req", DevExpress.Persistent.Validation.DefaultContexts.Save, "You must enter Model")]
         public string asset_model_name
         {
             get { return fasset_model_name; }
             set { SetPropertyValue<string>(nameof(asset_model_name), ref fasset_model_name, value); }
         }
-        [DevExpress.Xpo.DisplayName(@"Assets")]
-        [Association(@"assetReferencesasset_model")]
-        public XPCollection<asset> assets { get { return GetCollection<asset>(nameof(assets)); } }
+        [DevExpress.Xpo.DisplayName(@"Printers")]
+        [Association(@"printerReferencesprinter_model")]
+        public XPCollection<printer> printers { get { return GetCollection<printer>(nameof(printers)); } }
     }
 
 }

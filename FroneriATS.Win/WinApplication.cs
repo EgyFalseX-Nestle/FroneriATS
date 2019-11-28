@@ -7,6 +7,8 @@ using DevExpress.ExpressApp.Updating;
 using DevExpress.ExpressApp.Xpo;
 using DevExpress.ExpressApp.Security;
 using DevExpress.ExpressApp.Security.ClientServer;
+using DevExpress.Persistent.BaseImpl.PermissionPolicy;
+using DevExpress.Data.Filtering;
 
 namespace FroneriATS.Win {
     // For more typical usage scenarios, be sure to check out https://documentation.devexpress.com/eXpressAppFramework/DevExpressExpressAppWinWinApplicationMembersTopicAll.aspx
@@ -16,11 +18,13 @@ namespace FroneriATS.Win {
             DevExpress.Persistent.Base.PasswordCryptographer.EnableRfc2898 = true;
             DevExpress.Persistent.Base.PasswordCryptographer.SupportLegacySha512 = false;
             DevExpress.ExpressApp.ReportsV2.Win.WinReportServiceController.UseNewWizard = true;
+            //DevExpress.ExpressApp.Utils.ImageLoader.Instance.UseSvgImages = true;
         }
         private void InitializeDefaults() {
             LinkNewObjectToParentImmediately = false;
             OptimizedControllersCreation = true;
             UseLightStyle = true;
+            ExecuteStartupLogicBeforeClosingLogonWindow = true;
         }
         #endregion
         public FroneriATSWindowsFormsApplication() {
@@ -30,6 +34,8 @@ namespace FroneriATS.Win {
         protected override void CreateDefaultObjectSpaceProvider(CreateCustomObjectSpaceProviderEventArgs args) {
             args.ObjectSpaceProviders.Add(new SecuredObjectSpaceProvider((SecurityStrategyComplex)Security, XPObjectSpaceProvider.GetDataStoreProvider(args.ConnectionString, args.Connection, true), false));
             args.ObjectSpaceProviders.Add(new NonPersistentObjectSpaceProvider(TypesInfo, null));
+            //require to execute direct sql command and sp
+            ((SecuredObjectSpaceProvider)args.ObjectSpaceProvider).AllowICommandChannelDoWithSecurityContext = true;
         }
         private void FroneriATSWindowsFormsApplication_CustomizeLanguagesList(object sender, CustomizeLanguagesListEventArgs e) {
             string userLanguageName = System.Threading.Thread.CurrentThread.CurrentUICulture.Name;
@@ -42,9 +48,11 @@ namespace FroneriATS.Win {
             e.Updater.Update();
             e.Handled = true;
 #else
-            if(System.Diagnostics.Debugger.IsAttached) {
-                e.Updater.Update();
-                e.Handled = true;
+            e.Updater.Update();
+            e.Handled = true;
+            if (System.Diagnostics.Debugger.IsAttached) {
+                //e.Updater.Update();
+                //e.Handled = true;
             }
             else {
 				string message = "The application cannot connect to the specified database, " +
@@ -59,6 +67,20 @@ namespace FroneriATS.Win {
 				throw new InvalidOperationException(message);
             }
 #endif
+        }
+
+        private void AuthenticationActiveDirectory1_CustomCreateUser(object sender, CustomCreateUserEventArgs e)
+        {
+            PermissionPolicyUser user = e.ObjectSpace.CreateObject<PermissionPolicyUser>();
+            user.UserName = e.UserName;
+            PermissionPolicyRole defaultRole =
+                e.ObjectSpace.FindObject<PermissionPolicyRole>(new BinaryOperator("Name", "Default"));
+            if (defaultRole != null)
+            {
+                user.Roles.Add(defaultRole);
+            }
+            e.User = user;
+            e.Handled = true;
         }
     }
 }

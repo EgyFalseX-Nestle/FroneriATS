@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <ListView Id="asset_inventory_assets_ListView" DataAccessMode="Server" />
+    <ListView Id="asset_model_assets_ListView" DataAccessMode="Server" />
+    <ListView Id="asset_person_assets_ListView" DataAccessMode="Server" />
+    <ListView Id="asset_status_assets_ListView" DataAccessMode="Server" />
+    <ListView Id="asset_type_assets_ListView" DataAccessMode="Server" />
+  </Views>
+</Application>

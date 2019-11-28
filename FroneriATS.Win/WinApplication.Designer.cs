@@ -59,10 +59,12 @@
             this.validationModule = new DevExpress.ExpressApp.Validation.ValidationModule();
             this.validationWindowsFormsModule = new DevExpress.ExpressApp.Validation.Win.ValidationWindowsFormsModule();
             this.viewVariantsModule = new DevExpress.ExpressApp.ViewVariantsModule.ViewVariantsModule();
+            this.officeModule1 = new DevExpress.ExpressApp.Office.OfficeModule();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
             // securityStrategyComplex1
             // 
+            this.securityStrategyComplex1.AllowAnonymousAccess = false;
             this.securityStrategyComplex1.Authentication = this.authenticationActiveDirectory1;
             this.securityStrategyComplex1.RoleType = typeof(DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyRole);
             this.securityStrategyComplex1.SupportNavigationPermissionsForTypes = false;
@@ -72,10 +74,15 @@
             // 
             this.authenticationActiveDirectory1.CreateUserAutomatically = true;
             this.authenticationActiveDirectory1.LogonParametersType = null;
+            this.authenticationActiveDirectory1.CustomCreateUser += new System.EventHandler<DevExpress.ExpressApp.Security.CustomCreateUserEventArgs>(this.AuthenticationActiveDirectory1_CustomCreateUser);
             // 
             // auditTrailModule
             // 
             this.auditTrailModule.AuditDataItemPersistentType = typeof(DevExpress.Persistent.BaseImpl.AuditDataItemPersistent);
+            // 
+            // cloneObjectModule
+            // 
+            this.cloneObjectModule.ClonerType = null;
             // 
             // dashboardsModule
             // 
@@ -115,6 +122,10 @@
             this.validationModule.AllowValidationDetailsAccess = true;
             this.validationModule.IgnoreWarningAndInformationRules = false;
             // 
+            // officeModule1
+            // 
+            this.officeModule1.RichTextMailMergeDataType = null;
+            // 
             // FroneriATSWindowsFormsApplication
             // 
             this.ApplicationName = "FroneriATS";
@@ -142,6 +153,7 @@
             this.Modules.Add(this.fileAttachmentsWindowsFormsModule);
             this.Modules.Add(this.htmlPropertyEditorWindowsFormsModule);
             this.Modules.Add(this.notificationsWindowsFormsModule);
+            this.Modules.Add(this.officeModule1);
             this.Modules.Add(this.officeWindowsFormsModule);
             this.Modules.Add(this.pivotChartWindowsFormsModule);
             this.Modules.Add(this.pivotGridWindowsFormsModule);
@@ -198,5 +210,6 @@
         private DevExpress.ExpressApp.Validation.ValidationModule validationModule;
         private DevExpress.ExpressApp.Validation.Win.ValidationWindowsFormsModule validationWindowsFormsModule;
         private DevExpress.ExpressApp.ViewVariantsModule.ViewVariantsModule viewVariantsModule;
+        private DevExpress.ExpressApp.Office.OfficeModule officeModule1;
     }
 }

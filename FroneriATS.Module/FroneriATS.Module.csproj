@@ -170,31 +170,47 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BusinessObjects\ORMDataModelCode\asset.cs" />
-    <Compile Include="BusinessObjects\ORMDataModelCode\asset.Designer.cs">
-      <DependentUpon>asset.cs</DependentUpon>
-    </Compile>
-    <Compile Include="BusinessObjects\ORMDataModelCode\asset_inventory.cs" />
-    <Compile Include="BusinessObjects\ORMDataModelCode\asset_inventory.Designer.cs">
-      <DependentUpon>asset_inventory.cs</DependentUpon>
-    </Compile>
-    <Compile Include="BusinessObjects\ORMDataModelCode\asset_model.cs" />
-    <Compile Include="BusinessObjects\ORMDataModelCode\asset_model.Designer.cs">
-      <DependentUpon>asset_model.cs</DependentUpon>
-    </Compile>
-    <Compile Include="BusinessObjects\ORMDataModelCode\asset_person.cs" />
-    <Compile Include="BusinessObjects\ORMDataModelCode\asset_person.Designer.cs">
-      <DependentUpon>asset_person.cs</DependentUpon>
-    </Compile>
-    <Compile Include="BusinessObjects\ORMDataModelCode\asset_status.cs" />
-    <Compile Include="BusinessObjects\ORMDataModelCode\asset_status.Designer.cs">
-      <DependentUpon>asset_status.cs</DependentUpon>
-    </Compile>
-    <Compile Include="BusinessObjects\ORMDataModelCode\asset_type.cs" />
-    <Compile Include="BusinessObjects\ORMDataModelCode\asset_type.Designer.cs">
-      <DependentUpon>asset_type.cs</DependentUpon>
-    </Compile>
     <Compile Include="BusinessObjects\ORMDataModelCode\ConnectionHelper.cs" />
+    <Compile Include="BusinessObjects\ORMDataModelCode\inventory.cs" />
+    <Compile Include="BusinessObjects\ORMDataModelCode\inventory.Designer.cs">
+      <DependentUpon>inventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\ORMDataModelCode\mobile.cs" />
+    <Compile Include="BusinessObjects\ORMDataModelCode\mobile.Designer.cs">
+      <DependentUpon>mobile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\ORMDataModelCode\mobile_model.cs" />
+    <Compile Include="BusinessObjects\ORMDataModelCode\mobile_model.Designer.cs">
+      <DependentUpon>mobile_model.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\ORMDataModelCode\mobile_status.cs" />
+    <Compile Include="BusinessObjects\ORMDataModelCode\mobile_status.Designer.cs">
+      <DependentUpon>mobile_status.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\ORMDataModelCode\person.cs" />
+    <Compile Include="BusinessObjects\ORMDataModelCode\person.Designer.cs">
+      <DependentUpon>person.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\ORMDataModelCode\printer.cs" />
+    <Compile Include="BusinessObjects\ORMDataModelCode\printer.Designer.cs">
+      <DependentUpon>printer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\ORMDataModelCode\printer_model.cs" />
+    <Compile Include="BusinessObjects\ORMDataModelCode\printer_model.Designer.cs">
+      <DependentUpon>printer_model.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\ORMDataModelCode\printer_status.cs" />
+    <Compile Include="BusinessObjects\ORMDataModelCode\printer_status.Designer.cs">
+      <DependentUpon>printer_status.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\ORMDataModelCode\printer_type.cs" />
+    <Compile Include="BusinessObjects\ORMDataModelCode\printer_type.Designer.cs">
+      <DependentUpon>printer_type.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\ORMDataModelCode\user_inventory.cs" />
+    <Compile Include="BusinessObjects\ORMDataModelCode\user_inventory.Designer.cs">
+      <DependentUpon>user_inventory.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controllers\ctr_EditMode.cs" />
     <Compile Include="Controllers\ctr_GeneralSettings.cs" />
     <Compile Include="Controllers\ctr_IntiNew.cs">
@@ -224,6 +240,7 @@
       <SubType>Designer</SubType>
       <DependentUpon>Module.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="BusinessObjects\ORMDataModel.xpo" />
@@ -251,6 +268,8 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Images\FroneriATS.png" />
+    <EmbeddedResource Include="Images\mobile.svg" />
+    <EmbeddedResource Include="Images\printer.svg" />
     <Content Include="Welcome.html" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

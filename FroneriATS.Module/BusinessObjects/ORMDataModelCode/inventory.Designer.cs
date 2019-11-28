@@ -8,13 +8,15 @@
 //------------------------------------------------------------------------------
 using System;
 using DevExpress.Xpo;
+using DevExpress.Xpo.Metadata;
 using DevExpress.Data.Filtering;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Reflection;
 namespace FroneriATS.Module.BusinessObjects.FroneriATS
 {
 
-    public partial class asset_inventory : XPLiteObject
+    public partial class inventory : XPLiteObject
     {
         int fasset_inventory_id;
         [Key(true)]
@@ -27,16 +29,22 @@ namespace FroneriATS.Module.BusinessObjects.FroneriATS
         }
         string fasset_inventory_name;
         [Size(50)]
-        [DevExpress.Xpo.DisplayName(@"Inventory name")]
-        [DevExpress.Persistent.Validation.RuleRequiredField("asset_inventory_asset_inventory_name_vld_req", DevExpress.Persistent.Validation.DefaultContexts.Save, "Please Enter Inventory Name")]
+        [DevExpress.Xpo.DisplayName(@"Inventory")]
+        [DevExpress.Persistent.Validation.RuleRequiredField("inventory_asset_inventory_name_vld_req", DevExpress.Persistent.Validation.DefaultContexts.Save, "You must enter  Inventory")]
         public string asset_inventory_name
         {
             get { return fasset_inventory_name; }
             set { SetPropertyValue<string>(nameof(asset_inventory_name), ref fasset_inventory_name, value); }
         }
-        [DevExpress.Xpo.DisplayName(@"Assets")]
-        [Association(@"assetReferencesasset_inventory")]
-        public XPCollection<asset> assets { get { return GetCollection<asset>(nameof(assets)); } }
+        [DevExpress.Xpo.DisplayName(@"Mobiles")]
+        [Association(@"mobileReferencesinventory")]
+        public XPCollection<mobile> mobiles { get { return GetCollection<mobile>(nameof(mobiles)); } }
+        [DevExpress.Xpo.DisplayName(@"Printers")]
+        [Association(@"printerReferencesinventory")]
+        public XPCollection<printer> printers { get { return GetCollection<printer>(nameof(printers)); } }
+        [DevExpress.Xpo.DisplayName(@"Inventory Users")]
+        [Association(@"user_inventoryReferencesinventory")]
+        public XPCollection<user_inventory> user_inventorys { get { return GetCollection<user_inventory>(nameof(user_inventorys)); } }
     }
 
 }

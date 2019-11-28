@@ -8,20 +8,26 @@
 //------------------------------------------------------------------------------
 using System;
 using DevExpress.Xpo;
+using DevExpress.Xpo.Metadata;
 using DevExpress.Data.Filtering;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Reflection;
 namespace FroneriATS.Module.BusinessObjects.FroneriATS
 {
     public static class ConnectionHelper
     {
         static Type[] persistentTypes = new Type[] {
-            typeof(asset),
-            typeof(asset_inventory),
-            typeof(asset_model),
-            typeof(asset_person),
-            typeof(asset_status),
-            typeof(asset_type)
+            typeof(inventory),
+            typeof(mobile),
+            typeof(mobile_model),
+            typeof(persons),
+            typeof(mobile_status),
+            typeof(printer_model),
+            typeof(printer_status),
+            typeof(printer_type),
+            typeof(printer),
+            typeof(user_inventory)
         };
         public static Type[] GetPersistentTypes()
         {
@@ -29,7 +35,8 @@ namespace FroneriATS.Module.BusinessObjects.FroneriATS
             Array.Copy(persistentTypes, copy, persistentTypes.Length);
             return copy;
         }
-        public const string ConnectionString = @"XpoProvider=MSSqlServer;data source=.\SQL16;user id=sa;password=2491983;initial catalog=FroneriATS;Persist Security Info=true";
+#warning We recommend moving the connection string out of your source code (for instance, to a configuration file) to improve your application's maintainability and security.
+        public const string ConnectionString = "XpoProvider=MSSqlServer;data source=.;integrated security=SSPI;initial catalog=FroneriATS";
         public static void Connect(DevExpress.Xpo.DB.AutoCreateOption autoCreateOption, bool threadSafe = false)
         {
             if (threadSafe)

@@ -8,13 +8,15 @@
 //------------------------------------------------------------------------------
 using System;
 using DevExpress.Xpo;
+using DevExpress.Xpo.Metadata;
 using DevExpress.Data.Filtering;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Reflection;
 namespace FroneriATS.Module.BusinessObjects.FroneriATS
 {
 
-    public partial class asset_person : XPLiteObject
+    public partial class persons : XPLiteObject
     {
         int fasset_person_id;
         [Key(true)]
@@ -29,16 +31,17 @@ namespace FroneriATS.Module.BusinessObjects.FroneriATS
         [Indexed(Name = @"uni_name", Unique = true)]
         [Size(50)]
         [DevExpress.Xpo.DisplayName(@"Person name")]
-        [
-DevExpress.Persistent.Validation.RuleRequiredField("asset_person_asset_person_name_vld_req", DevExpress.Persistent.Validation.DefaultContexts.Save, "Please Enter Person Name")]
         public string asset_person_name
         {
             get { return fasset_person_name; }
             set { SetPropertyValue<string>(nameof(asset_person_name), ref fasset_person_name, value); }
         }
-        [DevExpress.Xpo.DisplayName(@"Assets")]
-        [Association(@"assetReferencesasset_person")]
-        public XPCollection<asset> assets { get { return GetCollection<asset>(nameof(assets)); } }
+        [DevExpress.Xpo.DisplayName(@"Mobiles")]
+        [Association(@"mobileReferencesperson")]
+        public XPCollection<mobile> mobiles { get { return GetCollection<mobile>(nameof(mobiles)); } }
+        [DevExpress.Xpo.DisplayName(@"Printers")]
+        [Association(@"printerReferencesperson")]
+        public XPCollection<printer> printers { get { return GetCollection<printer>(nameof(printers)); } }
     }
 
 }
