@@ -28,15 +28,16 @@ namespace FroneriATS.Module.BusinessObjects.FroneriATS
             set { SetPropertyValue<int>(nameof(id), ref fid, value); }
         }
         printer_type ftype_id;
+        [Indexed(Name = @"itype_id_printer")]
         [Association(@"printerReferencesprinter_type")]
         [DevExpress.Xpo.DisplayName(@"Type")]
-        [DevExpress.Persistent.Validation.RuleRequiredField("printer_type_id_vld_req", DevExpress.Persistent.Validation.DefaultContexts.Save, "You must enter Type")]
         public printer_type type_id
         {
             get { return ftype_id; }
             set { SetPropertyValue<printer_type>(nameof(type_id), ref ftype_id, value); }
         }
         printer_status fstatus_id;
+        [Indexed(Name = @"istatus_id_printer")]
         [Association(@"printerReferencesprinter_status")]
         [DevExpress.Xpo.DisplayName(@"Status")]
         [DevExpress.Persistent.Validation.RuleRequiredField("printer_status_id_vld_req", DevExpress.Persistent.Validation.DefaultContexts.Save, "You must enter Status")]
@@ -46,6 +47,7 @@ namespace FroneriATS.Module.BusinessObjects.FroneriATS
             set { SetPropertyValue<printer_status>(nameof(status_id), ref fstatus_id, value); }
         }
         printer_model fmodel_id;
+        [Indexed(Name = @"imodel_id_printer")]
         [Association(@"printerReferencesprinter_model")]
         [DevExpress.Xpo.DisplayName(@"Model")]
         [DevExpress.Persistent.Validation.RuleRequiredField("printer_model_id_vld_req", DevExpress.Persistent.Validation.DefaultContexts.Save, "You must enter Model")]
@@ -81,6 +83,7 @@ namespace FroneriATS.Module.BusinessObjects.FroneriATS
             set { SetPropertyValue<string>(nameof(serial_number), ref fserial_number, value); }
         }
         inventory finventory_id;
+        [Indexed(Name = @"iinventory_id_printer")]
         [Association(@"printerReferencesinventory")]
         [DevExpress.Xpo.DisplayName(@"Inventory")]
         [DevExpress.Persistent.Validation.RuleRequiredField("printer_inventory_id_vld_req", DevExpress.Persistent.Validation.DefaultContexts.Save, "You must enter Inventory")]
@@ -90,6 +93,7 @@ namespace FroneriATS.Module.BusinessObjects.FroneriATS
             set { SetPropertyValue<inventory>(nameof(inventory_id), ref finventory_id, value); }
         }
         persons fperson_id;
+        [Indexed(Name = @"iperson_id_printer")]
         [Association(@"printerReferencesperson")]
         [DevExpress.Xpo.DisplayName(@"Person")]
         public persons person_id
@@ -111,6 +115,14 @@ namespace FroneriATS.Module.BusinessObjects.FroneriATS
         {
             get { return fnotes; }
             set { SetPropertyValue<string>(nameof(notes), ref fnotes, value); }
+        }
+        string froute_number;
+        [Size(50)]
+        [DevExpress.Xpo.DisplayName(@"Route Number")]
+        public string route_number
+        {
+            get { return froute_number; }
+            set { SetPropertyValue<string>(nameof(route_number), ref froute_number, value); }
         }
     }
 
