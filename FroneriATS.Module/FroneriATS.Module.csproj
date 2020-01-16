@@ -170,6 +170,9 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BusinessObjects\NonPersistent\ChangePrinterStatus.cs" />
+    <Compile Include="BusinessObjects\NonPersistent\ChangeMobileStatus.cs" />
+    <Compile Include="BusinessObjects\NonPersistent\ChangeInventory.cs" />
     <Compile Include="BusinessObjects\ORMDataModelCode\ConnectionHelper.cs" />
     <Compile Include="BusinessObjects\ORMDataModelCode\inventory.cs" />
     <Compile Include="BusinessObjects\ORMDataModelCode\inventory.Designer.cs">
@@ -219,6 +222,18 @@
     <Compile Include="Controllers\ctr_IntiNew.Designer.cs">
       <DependentUpon>ctr_IntiNew.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controllers\PrinterCtr.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\PrinterCtr.designer.cs">
+      <DependentUpon>PrinterCtr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\MobileCtr.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\MobileCtr.designer.cs">
+      <DependentUpon>MobileCtr.cs</DependentUpon>
+    </Compile>
     <Compile Include="Core\PathHelper.cs" />
     <Compile Include="Core\SqlOp.cs" />
     <Compile Include="Core\Typez.cs" />
@@ -234,6 +249,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Controllers\ctr_IntiNew.resx">
       <DependentUpon>ctr_IntiNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\PrinterCtr.resx">
+      <DependentUpon>PrinterCtr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\MobileCtr.resx">
+      <DependentUpon>MobileCtr.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Model.DesignedDiffs.xafml" />
     <EmbeddedResource Include="Module.resx">

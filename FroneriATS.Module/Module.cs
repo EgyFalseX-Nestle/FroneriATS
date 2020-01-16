@@ -32,6 +32,17 @@ namespace FroneriATS.Module {
         public override void Setup(XafApplication application) {
             base.Setup(application);
             // Manage various aspects of the application UI and behavior at the module level.
+
+            //Supply NonPersistentObjectSpace with PersistentObjectSpace
+            application.ObjectSpaceCreated += (o, e) =>
+            {
+                if (e.ObjectSpace is NonPersistentObjectSpace)
+                {
+                    IObjectSpace generalObjectSpace = Application.CreateObjectSpace();
+                    ((NonPersistentObjectSpace)e.ObjectSpace).AdditionalObjectSpaces.Add(generalObjectSpace);
+                    e.ObjectSpace.Disposed += (s, args) => { generalObjectSpace.Dispose(); };
+                }
+            };
         }
         public override void CustomizeTypesInfo(ITypesInfo typesInfo) {
             base.CustomizeTypesInfo(typesInfo);
